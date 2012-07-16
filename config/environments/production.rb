@@ -17,7 +17,7 @@ config.action_view.cache_template_loading            = true
 # Disable delivery errors if you bad email addresses should just be ignored
 config.action_mailer.raise_delivery_errors = false
 
-config.action_mailer.default_url_options = { :host => 'inaturalist.org' }
+config.action_mailer.default_url_options = { :host => 'bioexplorador.inbio.ac.cr' }
 smtp_config_path = File.open("#{RAILS_ROOT}/config/smtp.yml")
 ActionMailer::Base.smtp_settings = YAML.load(smtp_config_path)
 
