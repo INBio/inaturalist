@@ -36,3 +36,14 @@ unless inat = Source.find_by_title('iNaturalist')
   )
   inat.save
 end
+
+unless inat = Source.find_by_title('INBio')
+  puts "Creating source for INBio..."
+  inat = Source.new(
+    :in_text => 'INBio',
+    :citation => 'INBio. <http://www.inbio.ac.cr/>.',
+    :url => 'http://www.inbio.ac.cr',
+    :title => 'INBio'
+  )
+  inat.save
+end
