@@ -69,17 +69,17 @@
     if (typeof(options.defaultQuery) != 'undefined') {
       $(input).val(options.defaultQuery);
     };
-    var button = $('<a href="#" class="button findbutton">Find Photos</a>').css(
+    var button = $('<a href="#" class="button findbutton">Encontrar</a>').css(
       $.fn.photoSelector.defaults.formInputCSS
     );
     
-    var urlSelectWrapper = $('<span class="urlselect inter"><strong>Source:</strong> </span>');
+    var urlSelectWrapper = $('<span class="urlselect inter"><strong>Fuente:</strong> </span>');
     if (options.baseURL.match(/context=user/)) {
       var urlSelect = $('<select class="select" style="margin: 0 auto"></select>');
       var urls = options.urls || [];
       if (!options.skipLocal) {
         urls.push({
-          title: "your hard drive",
+          title: "Tu computadora",
           url: '/photos/local_photo_fields?context=user'
         })
       }
@@ -110,7 +110,7 @@
     
     // Append next & prev links
     var page = $('<input class="photoSelectorPage" type="hidden" value="1"/>');
-    var prev = $('<a href="#" class="prevlink button">&laquo; Prev</a>').click(function(e) {
+    var prev = $('<a href="#" class="prevlink button">&laquo; Anterior</a>').click(function(e) {
       var pagenum = parseInt($(wrapper).find('.photoSelectorPage').val());
       pagenum -= 1;
       if (pagenum < 1) pagenum = 1;
@@ -123,7 +123,7 @@
       $(wrapper).find('.photoSelectorPage').val(pagenum);
       return false;
     });
-    var next = $('<a href="#" class="nextlink button">Next &raquo;</a>').click(function(e) {
+    var next = $('<a href="#" class="nextlink button">Siguiente &raquo;</a>').click(function(e) {
       var pagenum = parseInt($(wrapper).find('.photoSelectorPage').val());
       pagenum += 1;
       var nextOpts = $.extend({}, $(wrapper).data('photoSelectorOptions'));

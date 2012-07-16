@@ -711,25 +711,27 @@ a.csvlink{background-image:url(/images/silk/table.png);}
 }
 
 .simpleTaxonSelectorImage {
-  width: 31px;
+  width: 32px;
   float: left;
-  margin-right: 5px;
+  margin-right: 10px;
+  margin-top: 3px;
 }
 
 .simpleTaxonSelector .taxon.Unknown          { color: inherit;  background-image: url('/images/iconic_taxa/unknown-15px.png'); }
-.simpleTaxonSelector .taxon.Protozoa         { color: #691776;  background-image: url('/images/iconic_taxa/protozoa-15px.png'); }
-.simpleTaxonSelector .taxon.Plantae          { color: #73AC13;  background-image: url('/images/iconic_taxa/plantae-15px.png'); }
 .simpleTaxonSelector .taxon.Fungi            { color: DeepPink; background-image: url('/images/iconic_taxa/fungi-15px.png'); }
-.simpleTaxonSelector .taxon.Animalia         { color: #1E90FF;  background-image: url('/images/iconic_taxa/animalia-15px.png'); }
-.simpleTaxonSelector .taxon.Mollusca         { color: #FF4500;  background-image: url('/images/iconic_taxa/mollusca-15px.png'); background-position: 0px 0px;}
+.simpleTaxonSelector .taxon.Plantae          { color: #73AC13;  background-image: url('/images/iconic_taxa/plantae-15px.png'); }
 .simpleTaxonSelector .taxon.Arachnida        { color: #FF4500;  background-image: url('/images/iconic_taxa/arachnida-15px.png'); }
-.simpleTaxonSelector .taxon.Insecta          { color: #FF4500;  background-image: url('/images/iconic_taxa/insecta-15px.png'); }
+.simpleTaxonSelector .taxon.Mammalia         { color: #1E90FF;  background-image: url('/images/iconic_taxa/mammalia-15px.png'); }
 .simpleTaxonSelector .taxon.Amphibia         { color: #1E90FF;  background-image: url('/images/iconic_taxa/amphibia-15px.png'); }
 .simpleTaxonSelector .taxon.Reptilia         { color: #1E90FF;  background-image: url('/images/iconic_taxa/reptilia-15px.png'); }
 .simpleTaxonSelector .taxon.Aves             { color: #1E90FF;  background-image: url('/images/iconic_taxa/aves-15px.png'); }
-.simpleTaxonSelector .taxon.Mammalia         { color: #1E90FF;  background-image: url('/images/iconic_taxa/mammalia-15px.png'); }
+.simpleTaxonSelector .taxon.Insecta          { color: #FF4500;  background-image: url('/images/iconic_taxa/insecta-15px.png'); }
+
+.simpleTaxonSelector .taxon.Lepidoptera         { color: #691776;  background-image: url('/images/iconic_taxa/lepidoptera-15px.png'); }
+.simpleTaxonSelector .taxon.Coleoptera       { color: #FF4500;  background-image: url('/images/iconic_taxa/coleoptera-15px.png'); background-position: 0px 0px;}
+.simpleTaxonSelector .taxon.Orthoptera       { color: #1E90FF;  background-image: url('/images/iconic_taxa/orthoptera-15px.png'); }
+
 .simpleTaxonSelector .taxon.Actinopterygii   { color: #1E90FF;  background-image: url('/images/iconic_taxa/actinopterygii-15px.png'); }
-.simpleTaxonSelector .taxon.Chromista        { color: #993300;  background-image: url('/images/iconic_taxa/chromista-15px.png'); }
 
 .taxon_links .taxon {
   padding-left: 25px;
@@ -739,11 +741,11 @@ a.csvlink{background-image:url(/images/silk/table.png);}
 }
 
 .taxon_links .taxon.Unknown          { color: inherit;  background-image: url('/images/iconic_taxa/unknown-15px.png'); }
-.taxon_links .taxon.Protozoa         { color: #691776;  background-image: url('/images/iconic_taxa/protozoa-15px.png'); }
+.taxon_links .taxon.Lepidoptera         { color: #691776;  background-image: url('/images/iconic_taxa/lepidoptera-15px.png'); }
 .taxon_links .taxon.Plantae          { color: #73AC13;  background-image: url('/images/iconic_taxa/plantae-15px.png'); }
 .taxon_links .taxon.Fungi            { color: DeepPink; background-image: url('/images/iconic_taxa/fungi-15px.png'); }
-.taxon_links .taxon.Animalia         { color: #1E90FF;  background-image: url('/images/iconic_taxa/animalia-15px.png'); }
-.taxon_links .taxon.Mollusca         { color: #FF4500;  background-image: url('/images/iconic_taxa/mollusca-15px.png'); }
+.taxon_links .taxon.Orthoptera         { color: #1E90FF;  background-image: url('/images/iconic_taxa/orthoptera-15px.png'); }
+.taxon_links .taxon.Coleoptera         { color: #FF4500;  background-image: url('/images/iconic_taxa/coleoptera-15px.png'); }
 .taxon_links .taxon.Arachnida        { color: #FF4500;  background-image: url('/images/iconic_taxa/arachnida-15px.png'); }
 .taxon_links .taxon.Insecta          { color: #FF4500;  background-image: url('/images/iconic_taxa/insecta-15px.png'); }
 .taxon_links .taxon.Amphibia         { color: #1E90FF;  background-image: url('/images/iconic_taxa/amphibia-15px.png'); }
@@ -751,7 +753,6 @@ a.csvlink{background-image:url(/images/silk/table.png);}
 .taxon_links .taxon.Aves             { color: #1E90FF;  background-image: url('/images/iconic_taxa/aves-15px.png'); }
 .taxon_links .taxon.Mammalia         { color: #1E90FF;  background-image: url('/images/iconic_taxa/mammalia-15px.png'); }
 .taxon_links .taxon.Actinopterygii   { color: #1E90FF;  background-image: url('/images/iconic_taxa/actinopterygii-15px.png'); }
-.taxon_links .taxon.Chromista        { color: #993300;  background-image: url('/images/iconic_taxa/chromista-15px.png'); }
 
 /* Users table */
 
@@ -768,11 +769,11 @@ table.user-table td {
   text-decoration: line-through;
 }
 
-ul.taxonomic_tree li.Protozoa          { list-style-image: url('/images/iconic_taxa/protozoa-15px.png'); }
+ul.taxonomic_tree li.Lepidoptera          { list-style-image: url('/images/iconic_taxa/lepidoptera-15px.png'); }
 ul.taxonomic_tree li.Plantae          { list-style-image: url('/images/iconic_taxa/plantae-15px.png'); }
 ul.taxonomic_tree li.Fungi            { list-style-image: url('/images/iconic_taxa/fungi-15px.png'); }
-ul.taxonomic_tree li.Animalia         { list-style-image: url('/images/iconic_taxa/animalia-15px.png'); }
-ul.taxonomic_tree li.Mollusca         { list-style-image: url('/images/iconic_taxa/mollusca-15px.png'); }
+ul.taxonomic_tree li.Orthoptera         { list-style-image: url('/images/iconic_taxa/orthoptera-15px.png'); }
+ul.taxonomic_tree li.Coleoptera         { list-style-image: url('/images/iconic_taxa/coleoptera-15px.png'); }
 ul.taxonomic_tree li.Arachnida        { list-style-image: url('/images/iconic_taxa/arachnida-15px.png'); }
 ul.taxonomic_tree li.Insecta          { list-style-image: url('/images/iconic_taxa/insecta-15px.png'); }
 ul.taxonomic_tree li.Actinopterygii   { list-style-image: url('/images/iconic_taxa/actinopterygii-15px.png'); }
@@ -780,7 +781,6 @@ ul.taxonomic_tree li.Amphibia         { list-style-image: url('/images/iconic_ta
 ul.taxonomic_tree li.Reptilia         { list-style-image: url('/images/iconic_taxa/reptilia-15px.png'); }
 ul.taxonomic_tree li.Aves             { list-style-image: url('/images/iconic_taxa/aves-15px.png'); }
 ul.taxonomic_tree li.Mammalia         { list-style-image: url('/images/iconic_taxa/mammalia-15px.png'); }
-ul.taxonomic_tree li.Chromista         { list-style-image: url('/images/iconic_taxa/chromista-15px.png'); }
 ul.taxonomic_tree li.unknown          { list-style-image: url('/images/iconic_taxa/unknown-15px.png'); }
 ul.taxonomic_tree .taxon .othernames {
   display: block;
@@ -885,19 +885,18 @@ form.inline .label {
 .iconic_taxon_sprite.selected {
   background-position: 0 0;
 }
-.iconic_taxon_sprite.animalia { background-image: url(/images/iconic_taxa/animalia-sprite.png); }
+.iconic_taxon_sprite.orthoptera { background-image: url(/images/iconic_taxa/orthoptera-sprite.png); }
 .iconic_taxon_sprite.actinopterygii { background-image: url(/images/iconic_taxa/actinopterygii-sprite.png); }
 .iconic_taxon_sprite.amphibia { background-image: url(/images/iconic_taxa/amphibia-sprite.png); }
 .iconic_taxon_sprite.reptilia { background-image: url(/images/iconic_taxa/reptilia-sprite.png); }
 .iconic_taxon_sprite.aves { background-image: url(/images/iconic_taxa/aves-sprite.png); }
 .iconic_taxon_sprite.mammalia { background-image: url(/images/iconic_taxa/mammalia-sprite.png); }
-.iconic_taxon_sprite.mollusca { background-image: url(/images/iconic_taxa/mollusca-sprite.png); }
+.iconic_taxon_sprite.coleoptera { background-image: url(/images/iconic_taxa/coleoptera-sprite.png); }
 .iconic_taxon_sprite.arachnida { background-image: url(/images/iconic_taxa/arachnida-sprite.png); }
 .iconic_taxon_sprite.insecta { background-image: url(/images/iconic_taxa/insecta-sprite.png); }
 .iconic_taxon_sprite.fungi { background-image: url(/images/iconic_taxa/fungi-sprite.png); }
-.iconic_taxon_sprite.protozoa { background-image: url(/images/iconic_taxa/protozoa-sprite.png); }
+.iconic_taxon_sprite.lepidoptera { background-image: url(/images/iconic_taxa/lepidoptera-sprite.png); }
 .iconic_taxon_sprite.plantae { background-image: url(/images/iconic_taxa/plantae-sprite.png); }
-.iconic_taxon_sprite.chromista { background-image: url(/images/iconic_taxa/chromista-sprite.png); }
 
 .gmapv3control {
   color: black;
@@ -1200,3 +1199,5 @@ ul.plain {list-style:none;margin:0;padding:0}
 .small.photo {max-width:240px;}
 .medium.photo {max-width:500px;}
 .large.photo {max-width:1024px;}
+/******* add by cgranados 21may2012 ***********/
+#bannerINB {background:url("/images/banners/1.jpg"); height:130px; background-repeat:no-repeat; background-position:center center; margin: 0 0 15px 0}

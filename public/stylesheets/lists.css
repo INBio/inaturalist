@@ -157,11 +157,11 @@
   background-color: #F7F7F7;
 }
 
-.Protozoa,        .stat.Protozoa a        { color: #691776;  }
+.Lepidoptera,        .stat.Lepidoptera a        { color: #691776;  }
 .Plantae,         .stat.Plantae a         { color: #73AC13;  }
 .Fungi,           .stat.Fungi a           { color: DeepPink; }
-.Animalia,        .stat.Animalia a        { color: #1E90FF;  }
-.Mollusca,        .stat.Mollusca a        { color: #FF4500;  }
+.Orthoptera,        .stat.Orthoptera a        { color: #1E90FF;  }
+.Coleoptera,        .stat.Coleoptera a        { color: #FF4500;  }
 .Arachnida,       .stat.Arachnida a       { color: #FF4500;  }
 .Insecta,         .stat.Insecta a         { color: #FF4500;  }
 .Amphibia,        .stat.Amphibia a        { color: #1E90FF;  }
@@ -169,13 +169,12 @@
 .Aves,            .stat.Aves a            { color: #1E90FF;  }
 .Mammalia,        .stat.Mammalia a        { color: #1E90FF;  }
 .Actinopterygii,  .stat.Actinopterygii a  { color: #1E90FF;  }
-.Chromista,       .stat.Chromista a  { color: #993300;  }
 
-.Protozoa:hover  { color: #691776;  }
+.Lepidoptera:hover  { color: #691776;  }
 .Plantae:hover   { color: #73AC13;  }
 .Fungi:hover     { color: DeepPink; }
-.Animalia:hover  { color: #1E90FF;  }
-.Mollusca:hover  { color: #FF4500;  }
+.Orthoptera:hover  { color: #1E90FF;  }
+.Coleoptera:hover  { color: #FF4500;  }
 .Arachnida:hover { color: #FF4500;  }
 .Insecta:hover   { color: #FF4500;  }
 .Amphibia:hover  { color: #1E90FF;  }
@@ -183,14 +182,13 @@
 .Aves:hover      { color: #1E90FF;  }
 .Mammalia:hover  { color: #1E90FF;  }
 .Actinopterygii:hover  { color: #1E90FF;  }
-.Chromista:hover  { color: #993300;  }
 
 .listed_taxon.Unknown   .column.image { background-image: url('/images/iconic_taxa/unknown-32px.png'); }
-.listed_taxon.Protozoa  .column.image { background-image: url('/images/iconic_taxa/protozoa-32px.png'); }
+.listed_taxon.Lepidoptera  .column.image { background-image: url('/images/iconic_taxa/lepidoptera-32px.png'); }
 .listed_taxon.Plantae   .column.image { background-image: url('/images/iconic_taxa/plantae-32px.png'); }
 .listed_taxon.Fungi     .column.image { background-image: url('/images/iconic_taxa/fungi-32px.png'); }
-.listed_taxon.Animalia  .column.image { background-image: url('/images/iconic_taxa/animalia-32px.png'); }
-.listed_taxon.Mollusca  .column.image { background-image: url('/images/iconic_taxa/mollusca-32px.png'); }
+.listed_taxon.Orthoptera  .column.image { background-image: url('/images/iconic_taxa/orthoptera-32px.png'); }
+.listed_taxon.Coleoptera  .column.image { background-image: url('/images/iconic_taxa/coleoptera-32px.png'); }
 .listed_taxon.Arachnida .column.image { background-image: url('/images/iconic_taxa/arachnida-32px.png'); }
 .listed_taxon.Insecta   .column.image { background-image: url('/images/iconic_taxa/insecta-32px.png'); }
 .listed_taxon.Amphibia  .column.image { background-image: url('/images/iconic_taxa/amphibia-32px.png'); }
@@ -209,11 +207,11 @@
 }
 
 .listed_taxa_group.Unknown   .title { background-image: url('/images/iconic_taxa/unknown-32px.png'); }
-.listed_taxa_group.Protozoa  .title { color: #691776;  background-image: url('/images/iconic_taxa/protozoa-32px.png'); padding-left: 40px; }
+.listed_taxa_group.Lepidoptera  .title { color: #691776;  background-image: url('/images/iconic_taxa/lepidoptera-32px.png'); padding-left: 40px; }
 .listed_taxa_group.Plantae   .title { color: #73AC13;  background-image: url('/images/iconic_taxa/plantae-32px.png'); }
 .listed_taxa_group.Fungi     .title { color: DeepPink; background-image: url('/images/iconic_taxa/fungi-32px.png'); padding-left: 40px; }
-.listed_taxa_group.Animalia  .title { color: #1E90FF;  background-image: url('/images/iconic_taxa/animalia-32px.png'); }
-.listed_taxa_group.Mollusca  .title { color: #FF4500;  background-image: url('/images/iconic_taxa/mollusca-32px.png'); }
+.listed_taxa_group.Orthoptera  .title { color: #1E90FF;  background-image: url('/images/iconic_taxa/orthoptera-32px.png'); }
+.listed_taxa_group.Coleoptera  .title { color: #FF4500;  background-image: url('/images/iconic_taxa/coleoptera-32px.png'); }
 .listed_taxa_group.Arachnida .title { color: #FF4500;  background-image: url('/images/iconic_taxa/arachnida-32px.png'); padding-left: 45px; }
 .listed_taxa_group.Insecta   .title { color: #FF4500;  background-image: url('/images/iconic_taxa/insecta-32px.png'); padding-left: 60px; }
 .listed_taxa_group.Amphibia  .title { color: #1E90FF;  background-image: url('/images/iconic_taxa/amphibia-32px.png'); }
@@ -221,7 +219,6 @@
 .listed_taxa_group.Aves      .title { color: #1E90FF;  background-image: url('/images/iconic_taxa/aves-32px.png'); }
 .listed_taxa_group.Mammalia  .title { color: #1E90FF;  background-image: url('/images/iconic_taxa/mammalia-32px.png'); }
 .listed_taxa_group.Actinopterygii  .title { color: #1E90FF;  background-image: url('/images/iconic_taxa/actinopterygii-32px.png'); }
-.listed_taxa_group.Chromista .title { color: #993300;  background-image: url('/images/iconic_taxa/chromista-32px.png'); }
 
 .listed_taxa_group .title .small.description {
   font-size: 60%;
@@ -241,11 +238,11 @@
 
 .stat                 .title { color: #74AC00;  background-image: url('/images/logo-grey-15px.png'); }
 .stat.Unknown         .title { color: inherit;  background-image: url('/images/iconic_taxa/unknown-15px.png'); }
-.stat.Protozoa        .title { color: #691776;  background-image: url('/images/iconic_taxa/protozoa-15px.png'); }
+.stat.Lepidoptera        .title { color: #691776;  background-image: url('/images/iconic_taxa/lepidoptera-15px.png'); }
 .stat.Plantae         .title { color: #73AC13;  background-image: url('/images/iconic_taxa/plantae-15px.png'); }
 .stat.Fungi           .title { color: DeepPink; background-image: url('/images/iconic_taxa/fungi-15px.png'); }
-.stat.Animalia        .title { color: #1E90FF;  background-image: url('/images/iconic_taxa/animalia-15px.png'); }
-.stat.Mollusca        .title { color: #FF4500;  background-image: url('/images/iconic_taxa/mollusca-15px.png'); }
+.stat.Orthoptera        .title { color: #1E90FF;  background-image: url('/images/iconic_taxa/orthoptera-15px.png'); }
+.stat.Coleoptera        .title { color: #FF4500;  background-image: url('/images/iconic_taxa/coleoptera-15px.png'); }
 .stat.Arachnida       .title { color: #FF4500;  background-image: url('/images/iconic_taxa/arachnida-15px.png'); }
 .stat.Insecta         .title { color: #FF4500;  background-image: url('/images/iconic_taxa/insecta-15px.png'); }
 .stat.Amphibia        .title { color: #1E90FF;  background-image: url('/images/iconic_taxa/amphibia-15px.png'); }
@@ -253,13 +250,12 @@
 .stat.Aves            .title { color: #1E90FF;  background-image: url('/images/iconic_taxa/aves-15px.png'); }
 .stat.Mammalia        .title { color: #1E90FF;  background-image: url('/images/iconic_taxa/mammalia-15px.png'); }
 .stat.Actinopterygii  .title { color: #1E90FF;  background-image: url('/images/iconic_taxa/actinopterygii-15px.png'); }
-.stat.Chromista       .title { color: #993300;  background-image: url('/images/iconic_taxa/chromista-15px.png'); }
 
-.stat.Protozoa        .barchart .value { background-color: #691776;  }
+.stat.Lepidoptera        .barchart .value { background-color: #691776;  }
 .stat.Plantae         .barchart .value { background-color: #73AC13;  }
 .stat.Fungi           .barchart .value { background-color: DeepPink; }
-.stat.Animalia        .barchart .value { background-color: #1E90FF;  }
-.stat.Mollusca        .barchart .value { background-color: #FF4500;  }
+.stat.Orthoptera        .barchart .value { background-color: #1E90FF;  }
+.stat.Coleoptera        .barchart .value { background-color: #FF4500;  }
 .stat.Arachnida       .barchart .value { background-color: #FF4500;  }
 .stat.Insecta         .barchart .value { background-color: #FF4500;  }
 .stat.Amphibia        .barchart .value { background-color: #1E90FF;  }
@@ -267,7 +263,6 @@
 .stat.Aves            .barchart .value { background-color: #1E90FF;  }
 .stat.Mammalia        .barchart .value { background-color: #1E90FF;  }
 .stat.Actinopterygii  .barchart .value { background-color: #1E90FF;  }
-.stat.Chromista       .barchart .value { background-color: #993300;  }
 
 .pagination {
   margin: 1em 0;

@@ -8,7 +8,6 @@
 .observation .description.attribute{color:#333;}
 .observation div.description p{font-style:italic;}
 .observation .description.attribute img,
-.observation .details.attribute {display:none;}
 .observation .details.attribute img{max-width:400px;height:auto;}
 .observation .actions ul{display:inline;list-style:none;margin:0;padding:0;}
 .observation .actions ul li{display:inline;white-space:nowrap;}

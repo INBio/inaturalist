@@ -33,7 +33,7 @@
     if (typeof(options.defaultQuery) != 'undefined') {
       $(input).val(options.defaultQuery);
     };
-    var button = $('<a href="#" class="button observationSelectorSearchButton">Find observations</a>').css(
+    var button = $('<a href="#" class="button observationSelectorSearchButton">Buscar observaciones</a>').css(
       $.extend($.fn.observationSelector.defaults.controlsCSS, {
         display: 'none' // until we get full-text search for observations
       })
@@ -41,7 +41,7 @@
     
     // Append next & prev links
     var page = $('<input class="observationSelectorPage" type="hidden" value="1"/>');
-    var prev = $('<a href="#" class="prevlink button">&laquo; Prev</a>').click(function(e) {
+    var prev = $('<a href="#" class="prevlink button">&laquo; Anterior</a>').click(function(e) {
       var pagenum = parseInt($(wrapper).find('.observationSelectorPage').val());
       pagenum -= 1;
       if (pagenum < 1) pagenum = 1;
@@ -55,7 +55,7 @@
       $(wrapper).find('.observationSelectorPage').val(pagenum);
       return false;
     });
-    var next = $('<a href="#" class="nextlink button">Next &raquo;</a>').click(function(e) {
+    var next = $('<a href="#" class="nextlink button">Siguiente &raquo;</a>').click(function(e) {
       var pagenum = parseInt($(wrapper).find('.observationSelectorPage').val());
       pagenum += 1;
       var nextOpts = $.extend({}, options);
@@ -68,11 +68,11 @@
       $(wrapper).find('.observationSelectorPage').val(pagenum);
       return false;
     });
-    var selectAll = $('<a href="#" class="selectall button">Select All</a>').click(function(e) {
+    var selectAll = $('<a href="#" class="selectall button">Todos</a>').click(function(e) {
       $(wrapper).find('input:checkbox').attr('checked', true);
       return false;
     });
-    var selectNone = $('<a href="#" class="selectnone button">Select None</a>').click(function(e) {
+    var selectNone = $('<a href="#" class="selectnone button">Ninguno</a>').click(function(e) {
       $(wrapper).find('input:checkbox').attr('checked', false);
       return false;
     });

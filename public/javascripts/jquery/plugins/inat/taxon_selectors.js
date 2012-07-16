@@ -431,7 +431,7 @@
   });
   
   $.fn.simpleTaxonSelector.defaults = {
-    buttonText: 'Lookup',
+    buttonText: 'Buscar',
     includeSearchExternal: true
   };
 })

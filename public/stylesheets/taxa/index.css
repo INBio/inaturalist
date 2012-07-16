@@ -61,14 +61,14 @@ div.iconic_taxon:hover {
 }
 
 
-#Mollusca a, #Mollusca a:hover,
+#Coleoptera a, #Coleoptera a:hover,
 #Arachnida a, #Arachnida a:hover,
 #Insecta a, #Insecta a:hover {
   color: #ff4500;
 }
 
-#Mollusca h3 {
-  background: url('/images/iconic_taxa/mollusca-ff4500-20px.png') 0 0 no-repeat;
+#Coleoptera h3 {
+  background: url('/images/iconic_taxa/coleoptera-ff4500-20px.png') 0 0 no-repeat;
 }
 
 #Arachnida h3 {
@@ -79,7 +79,7 @@ div.iconic_taxon:hover {
   background: url('/images/iconic_taxa/insecta-ff4500-20px.png') 2px 3px no-repeat;
 }
 
-#Animalia a, #Animalia a:hover,
+#Orthoptera a, #Orthoptera a:hover,
 #Reptilia a, #Reptilia a:hover,
 #Amphibia a, #Amphibia a:hover,
 #Aves a, #Aves a:hover,
@@ -87,8 +87,8 @@ div.iconic_taxon:hover {
   color: #1e90ff;
 }
 
-#Animalia h3 {
-  background: url('/images/iconic_taxa/animalia-1e90ff-20px.png') 2px 0 no-repeat;
+#Orthoptera h3 {
+  background: url('/images/iconic_taxa/orthoptera-1e90ff-20px.png') 2px 0 no-repeat;
 }
 
 #Amphibia h3 {
@@ -111,18 +111,11 @@ div.iconic_taxon:hover {
   background: url('/images/iconic_taxa/actinopterygii-1e90ff-20px.png') 2px 0 no-repeat;
 }
 
-#Protozoa a, #Protozoa a:hover {
+#Lepidoptera a, #Lepidoptera a:hover {
   color: #691776;
 }
-#Protozoa h3 {
-  background: url('/images/iconic_taxa/protozoa-20px.png') 2px 0 no-repeat;
-}
-
-#Chromista a, #Chromista a:hover {
-  color: #993300;
-}
-#Chromista h3 {
-  background: url('/images/iconic_taxa/chromista-20px.png') 2px 0 no-repeat;
+#Lepidoptera h3 {
+  background: url('/images/iconic_taxa/lepidoptera-20px.png') 2px 0 no-repeat;
 }
 
 .iconic_taxon .taxon
