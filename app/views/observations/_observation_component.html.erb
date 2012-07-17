@@ -119,13 +119,13 @@ Some notes:
   </div>
   <div class="observed_on attribute">
     <h4 class="label"><%=t :observation_date %></h4>
-    <span class="date" title="<%= observation.observed_on ? observation.observed_on.strftime("%Y-%m-%d") : '' %>">
+    <span class="date" title="<%= observation.observed_on ? observation.observed_on : '' %>">
       <%#= observation.observed_on ? observation.observed_on.strftime("%b. %e, %Y") : 'the past' %>
       <% if observation.observed_on -%>
-        <%= link_to observation.observed_on.strftime('%b'), 
-          observations_by_login_path(observation.user.login, :on => "#{observation.observed_on.year}-#{observation.observed_on.month}") %>
         <%= link_to observation.observed_on.day, 
-          observations_by_login_path(observation.user.login, :on => "#{observation.observed_on.year}-#{observation.observed_on.month}-#{observation.observed_on.day}") %>,
+          observations_by_login_path(observation.user.login, :on => "#{observation.observed_on.year}-#{observation.observed_on.month}-#{observation.observed_on.day}") %>/
+        <%= h link_to observation.observed_on.month, 
+          observations_by_login_path(observation.user.login, :on => "#{observation.observed_on.year}-#{observation.observed_on.month}") %>/
         <%= link_to observation.observed_on.year, 
           observations_by_login_path(observation.user.login, :on => observation.observed_on.year) %>
       <% else %>
@@ -134,7 +134,7 @@ Some notes:
     </span>
     <% if observation.time_observed_at %>
     <span class="time">
-      <%= observation.time_observed_at.in_time_zone(observation.time_zone).strftime("%I:%M %p %Z") %>
+      <%=l observation.time_observed_at.in_time_zone(observation.time_zone) %>
     </span>
     <% end %>
   </div>
@@ -146,10 +146,10 @@ Some notes:
     <div class="created_at attribute" style="display:none">
       <h4 class="label"><%=t :date_added %></h4>
       <span class="date">
-        <%= observation.created_at.in_time_zone(observation.user.time_zone || 'UTC').strftime("%b. %e, %Y") %>
+        <%=l observation.created_at.in_time_zone(observation.user.time_zone || 'UTC')%>
       </span>
       <span class="time">
-        <%= observation.created_at.in_time_zone(observation.user.time_zone || 'UTC').strftime("%I:%M %p %Z") %>
+        <%=l observation.created_at.in_time_zone(observation.user.time_zone || 'UTC') %>
       </span>
     </div>
   <% end -%>
