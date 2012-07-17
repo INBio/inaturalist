@@ -129,22 +129,22 @@ module UsersHelper
   def activity_stream_tagline(update, options = {})
     activity_object = options[:activity_object] || update.activity_object
     html = link_to update.user.login, person_path(update.user)
-    html += " added "
+    html += " agregó "
     if update.batch_ids.blank?
       case update.activity_object_type 
       when "Post" 
-        html += "a #{link_to "journal post", journal_post_path(update.user.login, activity_object)} "
+        html += "un #{link_to "nuevo artículo", post_path(update.user.login, activity_object)} "
       when "Comment" 
-        html += "a #{link_to "comment", activity_object} "
-        html += "on #{activity_object.parent_type.match(/^[aeiou]/i) ? 'an' : 'a'} "
+        html += "un #{link_to "comentario", activity_object} "
+        html += "en #{activity_object.parent_type.match(/^[aeiou]/i) ? 'un ' : 'una '} "
         html += link_to(activity_object.parent_type.underscore.humanize.downcase, activity_object)
         if activity_object.parent.user 
-          html += " by #{link_to activity_object.parent.user.login, activity_object.parent.user} "
+          html += " por #{link_to activity_object.parent.user.login, activity_object.parent.user} "
         end 
       when "ListedTaxon" 
-         html += "a taxon to #{link_to activity_object.list.title, activity_object} "
+         html += "un taxon a #{link_to t(activity_object.list.title), activity_object} "
       when "List" 
-        html += "a new list called #{link_to activity_object.title, activity_object }"
+        html += "una nueva lista llamada #{link_to activity_object.title, activity_object }"
       else 
         html += update.activity_object_type.match(/^[aeiou]/i) ? 'an ' : 'a '
         html += link_to update.activity_object_type.underscore.humanize.downcase, activity_object
@@ -152,7 +152,7 @@ module UsersHelper
     else 
       html += pluralize update.batch_ids.split(',').size, update.activity_object_type.underscore.humanize.downcase 
     end 
-    html += " at #{update.updated_at.strftime("%I:%S %p").downcase.gsub(/^0/, '')}"
+    html += " el #{l update.updated_at}"
     html
   end
   
