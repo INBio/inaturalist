@@ -476,8 +476,8 @@ class ObservationsController < ApplicationController
     respond_to do |format|
       format.html do
         unless errors
-          flash[:notice] = params[:success_msg] || "Observation(s) saved!"
-          if params[:commit] == "Save and add another"
+          flash[:notice] = params[:success_msg] || t(:observations_saved)
+          if params[:commit] == t( :save_and_add_another ) 
             o = @observations.first
             redirect_to :action => 'new', 
               :latitude => o.latitude, 
