@@ -28,8 +28,8 @@ class User < ActiveRecord::Base
   preference :lists_by_login_order, :string, :default => "asc"
   preference :per_page, :integer, :default => 30
   preference :gbif_sharing, :boolean, :default => true
-  preference :observation_license, :string
-  preference :photo_license, :string
+  preference :observation_license, :string, :default => "CC-BY"
+  preference :photo_license, :string, :default => "CC-BY"
   
   NOTIFICATION_PREFERENCES = %w(comment_email_notification identification_email_notification project_invitation_email_notification)
   

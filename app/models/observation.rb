@@ -62,6 +62,7 @@ class Observation < ActiveRecord::Base
   LICENSES.each do |code, name, description|
     const_set code.gsub(/\-/, '_'), code
   end
+ 
   PREFERRED_LICENSES = [CC_BY, CC_BY_NC]
 
   belongs_to :user, :counter_cache => true

@@ -54,8 +54,8 @@ class ProjectList < LifeList
   
   private
   def set_defaults
-    self.title ||= "%s's Check List" % owner_name
-    self.description ||= "The species list for #{owner_name}"
+    self.title ||= "Lista de checkeo de %s " % owner_name
+    self.description ||= "La lista de especies de #{owner_name}"
     true
   end
 end

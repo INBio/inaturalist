@@ -140,23 +140,22 @@ class Taxon < ActiveRecord::Base
   
   # In case you don't feel like looking up TaxonNames
   ICONIC_TAXON_NAMES = {
-    'Animalia' => 'Animals',
-    'Actinopterygii' => 'Ray-finned Fishes',
-    'Aves' => 'Birds',
+    'Animalia' => 'Animales',
+    'Aves' => 'Aves',
+    'Amphibia' => 'Anfibios',
     'Reptilia' => 'Reptiles',
-    'Amphibia' => 'Amphibians',
-    'Mammalia' => 'Mammals',
-    'Arachnida' => 'Arachnids',
-    'Insecta' => 'Insects',
-    'Plantae' => 'Plants',
-    'Fungi' => 'Fungi',
-    'Protozoa' => 'Protozoans',
-    'Mollusca' => 'Mollusks',
-    'Chromista' => 'Chromista'
+    'Mammalia' => 'Mamíferos',
+    'Arachnida' => 'Arañas',
+    'Insecta' => 'Insectos',
+    'Plantae' => 'Plantas',
+    'Fungi' => 'Hongos',
+    'Orthoptera' => 'Esperanzas',
+    'Lepidoptera' => 'Mariposas',
+    'Coleoptera' => 'Escarabajos'
   }
   
   ICONIC_TAXON_DISPLAY_NAMES = ICONIC_TAXON_NAMES.merge(
-    'Animalia' => 'Other Animals'
+    'Animalia' => 'Otros animales'
   )
   
   LIFE = Taxon.roots.find_by_name('Life')

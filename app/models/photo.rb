@@ -43,7 +43,7 @@ class Photo < ActiveRecord::Base
       errors.add(
         :license, 
         "must be a Creative Commons license if the photo wasn't added by " +
-        "an iNaturalist user using their linked Flickr account.")
+        "a Bioexplorador user using their linked Flickr account.")
     end
     
     # Check to make sure the user owns the flickr photo
@@ -178,7 +178,8 @@ class Photo < ActiveRecord::Base
   end
   
   def self.license_number_for_code(code)
-    return COPYRIGHT if code.blank?
+#    return COPYRIGHT if code.blank?
+    return Observation::CC_BY_SA if code.blank?
     LICENSE_INFO.detect{|k,v| v[:code] == code}.try(:first)
   end
   

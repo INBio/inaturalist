@@ -166,11 +166,11 @@ class LifeList < List
   private
   def set_defaults
     if title.blank?
-      self.title = "%s's Life List" % owner_name
+      self.title = "La «lista de vida» de %s" % owner_name
       self.title += " of #{rule_taxon.default_name.name}" if rule_taxon
     end
     if description.blank? && rule_taxon.blank?
-      self.description = "Every species seen by #{owner_name}"
+      self.description = "Todas las especies vistas por #{owner_name}"
     end
     true
   end
